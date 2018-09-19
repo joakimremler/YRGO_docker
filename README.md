@@ -9,7 +9,6 @@
 The first thing you should do is to install Docker on your DigitalOcean Droplet. SSH to your server and follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) guide.
 You can start to do step 1 and 2.
 
-S:
 Update server:
 
     $ sudo apt-get update && sudo apt-get upgrade
@@ -77,8 +76,6 @@ Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/
 To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ubuntu/).
 
 [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
-
-s:
 
 Pull:
 
