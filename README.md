@@ -119,7 +119,7 @@ Add this content to the file:
       #Install htop
       RUN apt-get -y install htop
 
-      #Set working directiv to conatiner
+      #Set working directiv to container
       WORKDIR /app/yrgo
 
       #Run a bash loop and log output to logfile.log
@@ -153,7 +153,7 @@ If you can see a container that has IMAGE named `kalleanka/loop` you have succes
 
 ## 6. Inspect container
 
-Now when you have started a running container, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this conatiner and you get it by list all docker processes.
+Now when you have started a running container, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this container and you get it by list all docker processes.
 
     $ docker ps
 
@@ -168,17 +168,19 @@ You are now inside your container. You can see the output from the loop that is 
 And open `htop`, the application you installd inside the Dockerfile, by typing `htop`.
 Exit it by pressing `F10`
 
-## 7. Stop and delete runing conatiner
+## 7. Stop and delete runing container
 
-Before we are complete with this lession we should learn to stop our running container and remove them.
+Before you are complete with this lession you should learn how to stop your running container and remove them.
 
-To stop conatiner:
+To stop container:
 
     $ docker stop `CONTAINER ID`
 
-To remove conatiner:
+To remove container:
 
     $ docker rm `CONTAINER ID`
+
+## Complete!
 
 ## L2 Grupp arbete?
 
