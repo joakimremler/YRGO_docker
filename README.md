@@ -91,17 +91,17 @@ Run it:
 
     $ docker run -it ubuntu
 
-You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restat the container it would be empty again.
+You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restart the container it would be empty again.
 
 You can exit the container with `exit` command.
 
 But how can I install something insida a container that will constantly be there?
 
-## 4. Build a image with a Dockerfile
+## 4. Create a Dockerfile
 
 That is why we need Dockerfiles. A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
-So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact).
+So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact) and inside this image it should have a program called `htop`. By default the ubuntu image dosen't have this application.
 
 Create a file with nano called `Dockerfile`.
 
@@ -111,42 +111,24 @@ Add this content to the file:
 
       FROM ubuntu 16.04
 
-      #Specify user
-      USER root
+      #Update image
+      RUN apt-get update && apt-get install -y
 
-      #Update image and install htop
-      RUN apt-get update && apt-get install -y \
-        htop
+      #Install htop
+      RUN apt-get -y install htop
 
-      #Specify working dir
-      WORKDIR /app/script
+      #Run htop inside container
+      CMD ["htop"]
 
-      #Copy file from server into container
-      COPY ./hello.sh //app/script/hello.sh
+---
 
-      #Run this script when container starts
-      CMD bash ./hello.sh
+## 5. Build a image
 
-Create the bash script in the same directiv as the Dockerfile.
-
-    $ nano ./hello.sh
-
-Add inside `hello.sh`:
-
-    #!/bin/bash
-    x=1
-    while [ 1 ]
-    do
-      echo "Welcome to your caontainer $x times" >> logfile.txt
-      x=$(( $x + 1 ))
-      sleep 2
-    done
-
-Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/hello`.
+Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/htop`.
 
 **Note** that it is a good practice to name new image to `yourname/scriptname`.
 
-    $ docker build -t kalleanka/hello
+    $ docker build -t kalleanka/htop
 
 If you list all Docker images then you will see your new image
 
