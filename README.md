@@ -153,7 +153,7 @@ If you can see a container that has IMAGE named `kalleanka/loop` you have succes
 
 ## 6. Inspect container
 
-Now when you have started a running conatiner, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this conatiner and you get it by list all docker processes.
+Now when you have started a running container, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this conatiner and you get it by list all docker processes.
 
     $ docker ps
 
