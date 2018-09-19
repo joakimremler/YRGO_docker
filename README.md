@@ -96,7 +96,7 @@ But how can I install something insida a container that will constantly be there
 
 ## 4. Create a Dockerfile
 
-That is why we need Dockerfiles. A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
+That is why we use Dockerfiles. A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
 Before we start to create a new Dockerfile you should list all images that is pulled to your server.
 You can do this by running:
