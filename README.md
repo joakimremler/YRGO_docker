@@ -60,7 +60,7 @@ To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://w
 
 You should now run your first container from a image called [hello-world](https://hub.docker.com/_/hello-world/).
 
-But first we download the new image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it. Write this command in the terminal in the server:
+But first we download the new image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it. Write this command in the terminal:
 
     $ docker pull hello-world
 
@@ -90,11 +90,6 @@ Pull:
 Run it:
 
     $ docker run -it ubuntu
-
-Install and run htop
-
-    $ sudo apt-get install htop
-    $ htop
 
 You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restat the container it would be empty again.
 
