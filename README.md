@@ -117,10 +117,13 @@ Add this content to the file:
       FROM ubuntu 16.04
       #Specify user
       USER root
+
       #Specify working dir
       WORKDIR /app/script
+
       #Copy file from server into container
       COPY ./hello.sh //app/script/hello.sh
+
       #Run this script when container starts
       CMD bash ./hello.sh
 
