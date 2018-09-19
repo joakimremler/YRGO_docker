@@ -114,7 +114,7 @@ Create a file with nano called `Dockerfile`.
 
 Add this content to the file:
 
-      FROM ubuntu 16.04
+      FROM ubuntu:16.04
 
       #Update image
       RUN apt-get update && apt-get install -y
@@ -122,18 +122,19 @@ Add this content to the file:
       #Install htop
       RUN apt-get -y install htop
 
-      #Run htop inside container
-      CMD ["htop"]
+      #Set working directiv to conatiner
+      WORKDIR /app/yrgo
 
----
+      #Run a bash loop and log output to logfile.log
+      CMD exec /bin/sh -c "trap : TERM INT; (x=1; while true; do echo 'loops $x in container'>> logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait"
 
 ## 5. Build a image
 
-Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/htop`.
+Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/loop`.
 
-**Note** that it is a good practice to name new image to `yourname/scriptname`.
+**Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
-    $ docker build -t kalleanka/htop
+    $ docker build -t kalleanka/loop .
 
 If you list all Docker images then you will see your new image
 
@@ -141,9 +142,9 @@ If you list all Docker images then you will see your new image
 
 ## 5. Run our new image.
 
-Now we have created our new image and we are ready to run it.
+Now we have build our new image and we are ready to run it.
 
-    $ docker run kalleanka/hello bash
+    $ docker run kalleanka/htop bash
 
 ---
 
