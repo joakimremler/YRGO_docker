@@ -78,10 +78,12 @@ With that done we should go litte deeper into docker and run a ubuntu container 
 [<img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" alt="What!?" width="20%">](https://gph.is/2o1bMgY)
 
 To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ubuntu/).
+
 [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` flag.
 
 s:
-$ docker run -it ubuntu
+
+    $ docker run -it ubuntu
 
 ## 4. Build a image with a Dockerfile
 
