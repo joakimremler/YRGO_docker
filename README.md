@@ -60,7 +60,9 @@ To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://w
 
 You should now run your first container from a image called [hello-world](https://hub.docker.com/_/hello-world/).
 
-But first we download the new image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it. Write this command in the terminal:
+But first we download the new image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it.
+
+Write this command in the terminal:
 
     $ docker pull hello-world
 
