@@ -1,15 +1,19 @@
 # Docker
 
-[<img src="https://media.giphy.com/media/11a2UPL7roNGz6/giphy.gif" alt="Deploying to production server" width="100%">](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
-
-In this lession we should learn how to deploy files directly to production server from our local machine.
+> Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code. -- https://opensource.com/resources/what-docker
 
 ## Assignments
 
 ## 1. Create a index file
 
-Show:
+Show slides with:
 dockerhub
+contianers
+images
+
+ps ls
+run, build
+port, volumes, ...
 
 ## L1
 
@@ -20,10 +24,10 @@ dockerhub
 2. Run (hello world)[docker run hello-world]
    $ docker run hello-world
 
-3. Run Ubuntu inside ubuntu (??)
+3. Run Ubuntu inside ubuntu [https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif](https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif)
    $ docker run -it ubuntu bash
 
-4. Run a simple node web application
+4. Run a simple node web application from dockerhub joakimremler
 
 5. Create a dockerfile with a simple node application with support of mysql
 
