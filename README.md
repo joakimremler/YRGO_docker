@@ -104,9 +104,40 @@ But how can I install something insida a container that will constantly be there
 
 ## 4. Build a image with a Dockerfile
 
-That is why we need Dockerfiles. A Dockerfile is a instruction file to Docker creates a new image from with all of our new settings and this is when it becomse really interesting.
+That is why we need Dockerfiles. A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
-So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom node server [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact). But relax we should go thru this slowly.
+So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact).
+
+Create a file with nano called `Dockerfile`.
+
+    $  nano Dockerfile
+
+Add this content to the file:
+
+      FROM ubuntu 16.04
+      #Specify user
+      USER root
+      #Specify working dir
+      WORKDIR /app/script
+      #Copy file from server into container
+      COPY ./hello.sh //app/script/hello.sh
+      #Run this script when container starts
+      CMD bash ./hello.sh
+
+Create the bash script in the same directiv as the Dockerfile.
+
+    $ nano ./hello.sh
+
+Add inside `hello.sh`:
+
+    #!/bin/bash
+    x=1
+    while [ 1 ]
+    do
+      echo "Welcome to your caontainer $x times"
+      x=$(( $x + 1 ))
+      sleep 2
+    done
 
 First create a file called `Dockerfile`, you can use ´nano´. In this file we need some instructions that tells the Dockerfile what type of base image it will use and that is the `From` instruction.
 
