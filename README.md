@@ -129,7 +129,7 @@ Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
 ## 5. Build a image
 
-Then you should build our new image from our Dockerfile, we will call our new image `kalleanka/loop`.
+Then you should build a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
 
 **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
