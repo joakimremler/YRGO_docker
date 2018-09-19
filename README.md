@@ -115,6 +115,7 @@ Create a file with nano called `Dockerfile`.
 Add this content to the file:
 
       FROM ubuntu 16.04
+
       #Specify user
       USER root
 
