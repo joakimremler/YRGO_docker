@@ -79,7 +79,7 @@ With that done we should go litte deeper into docker and run a ubuntu container 
 
 To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ubuntu/).
 
-[Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` flag.
+[Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#pid-equivalent).
 
 s:
 
