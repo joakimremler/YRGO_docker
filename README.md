@@ -91,9 +91,30 @@ Run it:
 
     $ docker run -it ubuntu
 
+Install and run htop
+
+    $ sudo apt-get install htop
+    $ htop
+
+You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restat the container it would be empty again.
+
+You can exit the container with `exit` command.
+
+But how can I install something insida a container that will constantly be there?
+
 ## 4. Build a image with a Dockerfile
 
-node image witha a app.js node server file
+That is why we need Dockerfiles. A Dockerfile is a instruction file to Docker creates a new image from with all of our new settings and this is when it becomse really interesting.
+
+So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom node server [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact). But relax we should go thru this slowly.
+
+First create a file called `Dockerfile`, you can use ´nano´. In this file we need some instructions that tells the Dockerfile what type of base image it will use and that is the `From` instruction.
+
+    $ nano Dockerfile;
+
+We should add a [Node image](https://hub.docker.com/_/node/) as base to our Dockerfile. `FROM node:10`.
+
+Then we set the working dir of the project inside the container `WORKDIR /app/node` and copy all node file into the new container `COPY ./app.js ./app.js`.
 
 Show slides with:
 dockerhub
