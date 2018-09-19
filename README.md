@@ -138,10 +138,18 @@ Add inside `hello.sh`:
     x=1
     while [ 1 ]
     do
-      echo "Welcome to your caontainer $x times"
+      echo "Welcome to your caontainer $x times" >> logfile.txt
       x=$(( $x + 1 ))
       sleep 2
     done
+
+Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/hello`.
+
+**Note** that it is a good practice to name new image to `yourname/scriptname`.
+
+    $ docker build -t kalleanka/hello
+
+---
 
 First create a file called `Dockerfile`, you can use ´nano´. In this file we need some instructions that tells the Dockerfile what type of base image it will use and that is the `From` instruction.
 
