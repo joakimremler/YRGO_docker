@@ -1,6 +1,6 @@
 # Docker
 
-[<img src="https://media.giphy.com/media/l41YvpiA9uMWw5AMU/giphy.gif" alt="Deploying to production server" width="100%">](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+[<img src="https://media.giphy.com/media/11a2UPL7roNGz6/giphy.gif" alt="Deploying to production server" width="100%">](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
 In this lession we should learn how to deploy files directly to production server from our local machine.
 
@@ -31,3 +31,5 @@ dockerhub
 
 6. Docker stack Node + mysql + react
    > Se hur allt hänger ihop
+
+https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
