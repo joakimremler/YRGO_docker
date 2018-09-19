@@ -82,6 +82,7 @@ To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ub
 [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` flag.
 
 s:
+
 Pull:
 
     $ docker pull ubuntu
