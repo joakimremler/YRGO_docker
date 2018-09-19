@@ -125,6 +125,8 @@ Add this content to the file:
       #Run a bash loop and log output to logfile.log
       CMD exec /bin/sh -c 'trap : TERM INT; (x=1; while true; do echo "Welcome to container. Loop: $x" > logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait'
 
+Save the Dockerfile by pressing `Ctrl + x` then `y`.
+
 ## 5. Build a image
 
 Then we should build our new image from our Dockerfile, we will call our new image `kalleanka/loop`.
