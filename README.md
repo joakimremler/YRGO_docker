@@ -126,7 +126,7 @@ Add this content to the file:
       WORKDIR /app/yrgo
 
       #Run a bash loop and log output to logfile.log
-      CMD exec /bin/sh -c "trap : TERM INT; (x=1; while true; do echo 'loops $x in container'>> logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait"
+      CMD exec /bin/sh -c 'trap : TERM INT; (x=1; while true; do echo "Welcome to container. Loop: $x" > logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait'
 
 ## 5. Build a image
 
@@ -140,13 +140,17 @@ If you list all Docker images then you will see your new image
 
     $ docker image ls
 
-## 5. Run our new image.
+## 5. Run your new image.
 
-Now we have build our new image and we are ready to run it.
+Now we have build our new image and we are ready to run it. To run this container in the background we add a `-d` flag.
 
-    $ docker run kalleanka/htop bash
+    $ docker run -d kalleanka/loop
 
----
+docker ps
+
+docker exec -it 773b9376b221 bash
+
+## docker rm -f 773b9376b221
 
 First create a file called `Dockerfile`, you can use ´nano´. In this file we need some instructions that tells the Dockerfile what type of base image it will use and that is the `From` instruction.
 
