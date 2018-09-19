@@ -161,7 +161,7 @@ And then get the `CONTAINER ID` and add it to:
 
     $ docker exec -it `CONTAINER ID` bash
 
-You are now inside your container. You can now see the output from the loop that is running with:
+You are now inside your container. You can see the output from the loop that is running with:
 
     $ cat logfile.log
 
