@@ -119,6 +119,10 @@ Add this content to the file:
       #Specify user
       USER root
 
+      #Update image and install htop
+      RUN apt-get update && apt-get install -y \
+        htop
+
       #Specify working dir
       WORKDIR /app/script
 
@@ -148,6 +152,16 @@ Then we should build our new image from our Dockerfile, we will call our new ima
 **Note** that it is a good practice to name new image to `yourname/scriptname`.
 
     $ docker build -t kalleanka/hello
+
+If you list all Docker images then you will see your new image
+
+    $ docker image ls
+
+## 5. Run our new image.
+
+Now we have created our new image and we are ready to run it.
+
+    $ docker run kalleanka/hello bash
 
 ---
 
