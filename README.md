@@ -146,38 +146,40 @@ Now we have build our new image and we are ready to run it. To run this containe
 
     $ docker run -d kalleanka/loop
 
-docker ps
+Check that your new container is running by typing:
 
-docker exec -it 773b9376b221 bash
+    $ docker ps
 
-## docker rm -f 773b9376b221
+If you can see a container that has IMAGE named `kalleanka/loop` you have successfully build and started a own Docker container.
 
-First create a file called `Dockerfile`, you can use ´nano´. In this file we need some instructions that tells the Dockerfile what type of base image it will use and that is the `From` instruction.
+## 6. Inspect container
 
-    $ nano Dockerfile;
+Now when you have started a running conatiner, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this conatiner and you get it by list all docker processes.
 
-We should add a [Node image](https://hub.docker.com/_/node/) as base to our Dockerfile. `FROM node:10`.
+    $ docker ps
 
-Then we set the working dir of the project inside the container `WORKDIR /app/node` and copy all node file into the new container `COPY ./app.js ./app.js`.
+And then get the `CONTAINER ID` and add it to:
 
-Show slides with:
-dockerhub
-contianers
-images
+    $ docker exec -it `CONTAINER ID` bash
 
-ps ls
-run, build
-port, volumes, ...
+You are now inside your container. You can now see the output from the loop that is running with:
 
-2. Run (hello world)[docker run hello-world]
-   $ docker run hello-world
+    $ cat logfile.log
 
-3. Run Ubuntu inside ubuntu [https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif](https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif)
-   $ docker run -it ubuntu bash
+And open `htop`, the application we installd inside the Dockerfile, by typing `htop`.
+Exit `htop` by pressing `F10`
 
-4. Run a simple node web application from dockerhub joakimremler
+## 7. Stop and delete runing conatiner
 
-5. Create a dockerfile with a simple node application with support of mysql
+Before we are complete with this lession we should learn to stop our running container and remove them.
+
+To stop conatiner:
+
+    $ docker stop `CONTAINER ID`
+
+To remove conatiner:
+
+    $ docker rm `CONTAINER ID`
 
 ## L2 Grupp arbete?
 
