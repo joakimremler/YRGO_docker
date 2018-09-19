@@ -182,6 +182,8 @@ To remove container:
 
 ## Complete!
 
+[<img src="https://media.giphy.com/media/4Yn70mra350is/giphy.gif" alt="Complete!" width="20%">](https://gph.is/1Pwt4Xz)
+
 ## L2 Grupp arbete?
 
 6. Docker stack Node + mysql + react
