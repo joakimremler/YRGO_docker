@@ -66,7 +66,7 @@ Then we should [run](https://docs.docker.com/engine/reference/commandline/run/) 
 
     $ docker run hello-world
 
-You should now se a long message that contains `Hello from Docker!`.
+You should now se a long message that contains a line with `Hello from Docker!`.
 
 ## 3. Run a ubuntu contianer inside ubuntu (?)
 
