@@ -70,9 +70,7 @@ You should now se a long message that contains a line with `Hello from Docker!`.
 
 ## 3. Run a ubuntu contianer inside ubuntu (?)
 
-Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) step 5.
-
-When that is done you should go litte deeper into docker and run a ubuntu container inside our ubuntu server.
+Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) step 5. When that is done you should go litte deeper into docker and run a ubuntu container inside our ubuntu server.
 [<img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" alt="What!?" width="20%">](https://gph.is/2o1bMgY)
 
 To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ubuntu/).
