@@ -101,6 +101,11 @@ But how can I install something insida a container that will constantly be there
 
 That is why we need Dockerfiles. A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
+Before we start to create a new Dockerfile you should list all images that is pulled to your server.
+You can do this by running:
+
+    $ docker image ls
+
 So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact) and inside this image it should have a program called `htop`. By default the ubuntu image dosen't have this application.
 
 Create a file with nano called `Dockerfile`.
