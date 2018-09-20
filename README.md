@@ -180,20 +180,3 @@ To remove container:
 ## Complete!
 
 [<img src="https://media.giphy.com/media/4Yn70mra350is/giphy.gif" alt="Complete!" width="50%">](https://gph.is/1Pwt4Xz)
-
-## L2 Grupp arbete?
-
-1. Docker stack
-   add this to a stack file
-
-- kalleanka/loop
-- visulizater
-- mysql
-
-2. Create a docker swarm
-
-- se all stacks
-- se live logs
-- se loadbalancer
-
-https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
