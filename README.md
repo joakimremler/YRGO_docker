@@ -120,7 +120,7 @@ Add this content to the file:
       WORKDIR /app/yrgo
 
       #Run a bash loop and log output to logfile.log
-      CMD exec /bin/sh -c 'trap : TERM INT; (x=1; while true; do echo "Welcome to container. Loop: $x" > logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait'
+      CMD exec /bin/sh -c 'trap : TERM INT; (x=1; while true; do echo "Welcome to container. Loop: $x"; echo "Welcome to container. Loop: $x" > logfile.log; sleep 5; x=$(( $x + 1 )); done) & wait'
 
 Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
@@ -183,7 +183,17 @@ To remove container:
 
 ## L2 Grupp arbete?
 
-6. Docker stack Node + mysql + react
-   > Se hur allt hänger ihop
+1. Docker stack
+   add this to a stack file
+
+- kalleanka/loop
+- visulizater
+- mysql
+
+2. Create a docker swarm
+
+- se all stacks
+- se live logs
+- se loadbalancer
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
