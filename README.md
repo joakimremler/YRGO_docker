@@ -128,7 +128,7 @@ Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
 Then you should [build](https://docs.docker.com/engine/reference/commandline/build/) a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
 
-**Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
+> **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
     $ docker build -t kalleanka/loop .
 
