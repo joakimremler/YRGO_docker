@@ -4,7 +4,7 @@
 
 ## Assignments
 
-In this lession we are going to learn some basic skills about Docker. This includes how to install Docker and get the difference between an Docker Image and a Docker Conatiner. We are also going to learn how to manage a Docker process and how to build and run a image.
+In this lession we are going to learn some basic skills about Docker. This includes how to install Docker and get the difference between an Docker Image and a Docker Container. We are also going to learn how to manage a Docker process and how to build and run a image.
 
 ## 1. Install docker on Droplet
 
