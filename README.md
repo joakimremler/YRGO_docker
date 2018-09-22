@@ -150,7 +150,7 @@ If you can see a container that has IMAGE named `kalleanka/loop` you have succes
 
 ## 6. Inspect container
 
-Now when you have started a running container, you should be able to login to it and inspect it. Do do this you have to have the `CONTAINER ID` of this container and you get it by list all docker processes.
+Now when you have started a running container, you should be able to login into it and inspect it. To do this you have to get the `CONTAINER ID` of this container and you get it by [list](https://docs.docker.com/engine/reference/commandline/ps/) all docker processes.
 
     $ docker ps
 
@@ -158,16 +158,16 @@ And then get the `CONTAINER ID` and add it to:
 
     $ docker exec -it `CONTAINER ID` bash
 
-You are now inside your container. You can see the output from the loop that is running with:
+You are now inside your container. You can see the output from the loop that is running inside your container with a cat command:
 
     $ cat logfile.log
 
 And open `htop`, the application you installd inside the Dockerfile, by typing `htop`.
 Exit it by pressing `F10`
 
-## 7. Stop and delete runing container
+## 7. Stop and delete running container
 
-Before you are complete with this lession you should learn how to stop your running container and remove them.
+Before you are complete with this lession you should [stop](https://docs.docker.com/v17.09/engine/reference/commandline/stop/) your running container and then [remove](https://docs.docker.com/engine/reference/commandline/rm/) it.
 
 To stop container:
 
@@ -176,6 +176,8 @@ To stop container:
 To remove container:
 
     $ docker rm `CONTAINER ID`
+
+If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all your Docker processes the output should now be empty.
 
 ## Complete!
 
