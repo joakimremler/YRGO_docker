@@ -67,7 +67,7 @@ Then we should [run](https://docs.docker.com/engine/reference/commandline/run/) 
 
 You should now se a long message that contains a line with `Hello from Docker!`.
 
-## 3. Run a ubuntu contianer inside ubuntu (?)
+## 3. Run a ubuntu container inside ubuntu (?)
 
 Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) step 5. When that is done you should go litte deeper into docker and run a ubuntu container inside our ubuntu server.
 
