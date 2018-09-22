@@ -102,7 +102,7 @@ You can do this by running:
 
 So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact) and inside this image it should have a program called `htop`. By default the ubuntu image dosen't have this application.
 
-Create a file with nano called `Dockerfile`.
+Create a file with [nano](https://help.ubuntu.com/community/Nano) called `Dockerfile`
 
     $  nano Dockerfile
 
@@ -126,7 +126,7 @@ Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
 ## 5. Build a image
 
-Then you should build a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
+Then you should [build](https://docs.docker.com/engine/reference/commandline/build/) a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
 
 **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
