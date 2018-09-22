@@ -126,7 +126,7 @@ Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
 ## 5. Build a image
 
-Then you should [build](https://docs.docker.com/engine/reference/commandline/build/) a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
+Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#use-a-dockerignore-file) a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
 
 > **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
@@ -138,7 +138,7 @@ If you list all Docker images then you will see your new image
 
 ## 5. Run your new image.
 
-Now we have build our new image and we are ready to run it. To run this container in the background we add a `-d` flag.
+Now we have build our new image and we are ready to [run](https://docs.docker.com/engine/reference/run/#general-form) it. To run this container in the background we add a `-d` flag.
 
     $ docker run -d kalleanka/loop
 
