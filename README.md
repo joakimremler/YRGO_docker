@@ -73,7 +73,7 @@ Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/
 
 [<img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" alt="What!?" width="20%">](https://gph.is/2o1bMgY)
 
-To do this find a ubuntu image on dockerhub. [Hint!](https://hub.docker.com/_/ubuntu/).
+To do this find a [ubuntu](https://hub.docker.com/_/ubuntu/) image on dockerhub.
 
 [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
 
