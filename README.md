@@ -27,17 +27,7 @@ Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/
 
 [<img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" alt="What!?" width="20%">](https://gph.is/2o1bMgY)
 
-To do this find a [ubuntu](https://hub.docker.com/_/ubuntu/) image on dockerhub.
-
-[Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
-
-Pull:
-
-    $ docker pull ubuntu
-
-Run it:
-
-    $ docker run -it ubuntu
+To do this find a [ubuntu](https://hub.docker.com/_/ubuntu/) image on dockerhub. [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
 
 You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restart the container it would be empty again.
 
