@@ -99,7 +99,8 @@ But how can I install something insida a container that will constantly be there
 
 That is why we use [Dockerfiles](https://docs.docker.com/engine/reference/builder/#from). A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
-Before we start to create a new Dockerfile you should list all images that is pulled to your server.
+Before we start to create a new Dockerfile you should [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all images that is pulled to your server.
+
 You can do this by running:
 
     $ docker image ls
