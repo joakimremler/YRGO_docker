@@ -59,7 +59,9 @@ Confirm that your user is now added to the docker group by typing:
 
 ## 2. Run a hello-world Container
 
-To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04). Where they explains the Docker concept about image and Containers. When you have read these steps you should now run your first container from a image called [hello-world](https://hub.docker.com/_/hello-world/), but first you need to download the `hello-world` image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it.
+To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04). Where they explains the Docker concept about image and Containers. When you have read these steps you should now run your first container from a image called [hello-world](https://hub.docker.com/_/hello-world/).
+
+First you need to download the `hello-world` image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it.
 
 Write this command in the terminal:
 
