@@ -149,7 +149,7 @@ Now we have build our new image called `kalleanka/loop` we are ready to [run](ht
 
     $ docker run -d kalleanka/loop
 
-Check that your new container is running by typing:
+Check that your new container is [running](https://docs.docker.com/engine/reference/commandline/ps/).
 
     $ docker ps
 
