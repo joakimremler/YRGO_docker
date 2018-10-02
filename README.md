@@ -73,11 +73,7 @@ Then you should [build](https://docs.docker.com/engine/reference/commandline/bui
 
 > **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
-    $ docker build -t kalleanka/loop .
-
 If you [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all Docker images then you will see your new image.
-
-    $ docker image ls
 
 ## 5. Run your new image.
 
