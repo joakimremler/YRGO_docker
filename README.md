@@ -129,7 +129,7 @@ Add this content to the file:
 
 Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
-Talk to the student next to you and discuss what you think this Dockerfile will do. If you have no idè, ask your teacher.
+Talk to the student next to you and discuss what you think this Dockerfile will do. If you have no idè, ask your teacher to explane.
 
 ## 5. Build a image
 
