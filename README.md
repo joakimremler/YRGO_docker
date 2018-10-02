@@ -95,19 +95,11 @@ You are now inside your container. You can see the output from the loop that is 
 
 And open `htop`, the application you installd inside the Dockerfile, by typing `htop`.
 
-Exit htop by pressing `F10` and then exit container by typing `exit`.
+Exit `htop` by pressing `F10` and then exit container by typing `exit`.
 
 ## 7. Stop and delete running container
 
 Before you are complete with this lession you should [stop](https://docs.docker.com/v17.09/engine/reference/commandline/stop/) your running container and then [remove](https://docs.docker.com/engine/reference/commandline/rm/) it.
-
-To stop container:
-
-    $ docker stop `CONTAINER ID`
-
-To remove container:
-
-    $ docker rm `CONTAINER ID`
 
 If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all your Docker processes the output should now be empty.
 
