@@ -13,6 +13,50 @@ In this lession we are going to learn some basic skills about Docker. This inclu
 The first thing you should do is to install Docker on your DigitalOcean Droplet. SSH to your server and follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) guide.
 You can start to do step 1 and 2.
 
+Update server:
+
+    $ sudo apt-get update && sudo apt-get upgrade
+
+Use let apt-get use HTTPS:
+
+    $ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+Add GPG key:
+
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+Add the Docker repository to APT sources:
+
+    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+Next, update the package database with the Docker packages from the newly added repo:
+
+    $ sudo apt update
+
+Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:
+
+    $ apt-cache policy docker-ce
+
+Install Docker
+
+    $ sudo apt install docker-ce
+
+Check Status:
+
+    $ sudo systemctl status docker
+
+Add username to sudo group:
+
+    $ sudo usermod -aG docker ${USER}
+
+To apply the new group membership, log out of the server and back in, or type the following:
+
+    $ su - ${USER}
+
+Confirm that your user is now added to the docker group by typing:
+
+    $ id -nG
+
 ## 2. Run a hello-world Container
 
 To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04). Where they explains the Docker concept about image and Containers. When you have read these steps you should now run your first container from a image called `hello-world`.
