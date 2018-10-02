@@ -27,7 +27,7 @@ Keep reading [DigitalOcean Docker Guide](https://www.digitalocean.com/community/
 
 [<img src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" alt="What!?" width="20%">](https://gph.is/2o1bMgY)
 
-To do this find a [ubuntu](https://hub.docker.com/_/ubuntu/) image on dockerhub. [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
+To do this find a [ubuntu](https://hub.docker.com/_/ubuntu/) image on Dockerhub. [Pull](https://docs.docker.com/engine/reference/commandline/pull/) this down and [run](https://docs.docker.com/engine/reference/commandline/run/) it with a `-it` [flag](https://docs.docker.com/engine/reference/run/#foreground).
 
 You should now see a new bash terminal and this is from inside your running ubuntu container. If you look inside this container you will se that it is a totaly empty ubuntu installation. And if you install something inside this container and you restart the container it would be empty again.
 
@@ -40,10 +40,6 @@ But how can I install something insida a container that will constantly be there
 That is why we use [Dockerfiles](https://docs.docker.com/engine/reference/builder/#from). A Dockerfile is a instruction file that Docker uses to create a image with all of our new settings that we have added inside the Dockerfile and this is when it becomse really interesting.
 
 Before we start to create a new Dockerfile you should [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all images that is pulled to your server.
-
-You can do this by running:
-
-    $ docker image ls
 
 So your new task should be to [build](https://docs.docker.com/engine/reference/commandline/build/) your own custom [image](https://docs.docker.com/engine/reference/commandline/image/) with a [Dockerfile](https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact) and inside this image it should have a program called `htop`. By default the ubuntu image dosen't have this application.
 
