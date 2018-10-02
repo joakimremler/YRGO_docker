@@ -145,7 +145,7 @@ If you [list](https://docs.docker.com/engine/reference/commandline/image_ls/) al
 
 ## 5. Run your new image.
 
-Now we have build our new image and we are ready to [run](https://docs.docker.com/engine/reference/run/#general-form) it. To run this container in the background we add a `-d` flag.
+Now we have build our new image called `kalleanka/loop` we are ready to [run](https://docs.docker.com/engine/reference/run/#general-form) it. To run this container in the background we add a `-d` flag.
 
     $ docker run -d kalleanka/loop
 
