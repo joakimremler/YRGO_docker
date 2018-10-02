@@ -73,7 +73,7 @@ Then you should [build](https://docs.docker.com/engine/reference/commandline/bui
 
 > **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
-If you [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all Docker images then you will see your new image.
+After you have build your image you should [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all Docker images, then you will see your new image.
 
 ## 5. Run your new image.
 
