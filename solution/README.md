@@ -133,7 +133,7 @@ Talk to the student next to you and discuss what you think this Dockerfile will 
 
 ## 5. Build a image
 
-Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#use-a-dockerignore-file) a new image from your Dockerfile with a `-t` flag, we will tag your new image `kalleanka/loop`.
+Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#tag-an-image--t) a new image from your Dockerfile with a `-t` flag, we will tag your new image `kalleanka/loop`.
 
 > **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
@@ -143,7 +143,7 @@ If you [list](https://docs.docker.com/engine/reference/commandline/image_ls/) al
 
     $ docker image ls
 
-## 5. Run your new image.
+## 6. Run your new image.
 
 Now we have build our new image called `kalleanka/loop` we are ready to [run](https://docs.docker.com/engine/reference/run/#general-form) it. To run this container in the background we add a `-d` flag.
 
@@ -155,7 +155,7 @@ Check that your new container is [running](https://docs.docker.com/engine/refere
 
 If you can see a container that has IMAGE named `kalleanka/loop` you have successfully build and started a own Docker container.
 
-## 6. Inspect container
+## 7. Inspect container
 
 Now when you have started a running container, you should be able to login into it and inspect it. To do this you have to get the `CONTAINER ID` of this container and you get it by [list](https://docs.docker.com/engine/reference/commandline/ps/) all docker processes.
 
@@ -173,7 +173,7 @@ And open `htop`, the application you installd inside the Dockerfile, by typing `
 
 Exit htop by pressing `F10` and then exit container by typing `exit`.
 
-## 7. Stop and delete running container
+## 8. Stop and delete running container
 
 Before you are complete with this lession you should [stop](https://docs.docker.com/v17.09/engine/reference/commandline/stop/) your running container and then [remove](https://docs.docker.com/engine/reference/commandline/rm/) it.
 
