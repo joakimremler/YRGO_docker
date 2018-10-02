@@ -129,6 +129,8 @@ Add this content to the file:
 
 Save the Dockerfile by pressing `Ctrl + x` then `y`.
 
+Talk to the student next to you and discuss what you think this Dockerfile will do? If you have no ide, talk with your teacher.
+
 ## 5. Build a image
 
 Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#use-a-dockerignore-file) a new image from your Dockerfile, we will call your new image `kalleanka/loop`.
