@@ -19,11 +19,7 @@ To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://w
 
 First you need to download the [hello-world](https://hub.docker.com/_/hello-world/) image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it.
 
-    $ docker pull hello-world
-
 Then we should [run](https://docs.docker.com/engine/reference/commandline/run/) this image.
-
-    $ docker run hello-world
 
 You should now se a long message that contains a line with `Hello from Docker!`.
 
