@@ -139,7 +139,7 @@ Then you should [build](https://docs.docker.com/engine/reference/commandline/bui
 
     $ docker build -t kalleanka/loop .
 
-If you list all Docker images then you will see your new image
+If you [list](https://docs.docker.com/engine/reference/commandline/image_ls/) all Docker images then you will see your new image.
 
     $ docker image ls
 
