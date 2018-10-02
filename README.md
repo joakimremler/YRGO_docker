@@ -85,8 +85,6 @@ After that check that your new container is [running](https://docs.docker.com/en
 
 Now when you have started a running container, you should be able to login into it and inspect it. To do this you have to get the `CONTAINER ID` of this container and you get it by [list](https://docs.docker.com/engine/reference/commandline/ps/) all docker processes.
 
-    $ docker ps
-
 And then get the `CONTAINER ID` and add it to:
 
     $ docker exec -it `CONTAINER ID` bash
