@@ -79,7 +79,7 @@ After you have build your image you should [list](https://docs.docker.com/engine
 
 Now we have build our new image called `kalleanka/loop` we are ready to [run](https://docs.docker.com/engine/reference/run/#general-form) it. To run this container in the background we add a `-d` flag.
 
-After that check that your new container is [running](https://docs.docker.com/engine/reference/commandline/ps/). If you can see a container that has IMAGE named `kalleanka/loop` you have successfully build and started a own Docker container.
+After that check that your new container is [running](https://docs.docker.com/engine/reference/commandline/ps/). If you can see a container that has IMAGE named `kalleanka/loop` you have successfully build and started your own Docker container.
 
 ## 6. Inspect container
 
