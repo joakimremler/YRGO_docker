@@ -170,6 +170,7 @@ You are now inside your container. You can see the output from the loop that is 
     $ cat logfile.log
 
 And open `htop`, the application you installd inside the Dockerfile, by typing `htop`.
+
 Exit htop by pressing `F10` and then exit container by typing `exit`.
 
 ## 7. Stop and delete running container
