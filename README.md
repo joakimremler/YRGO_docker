@@ -17,9 +17,7 @@ You can start to do step 1 and 2.
 
 To continue you can read step 3 and 4 from [DigitalOcean Docker Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04). Where they explains the Docker concept about image and Containers. When you have read these steps you should now run your first container from a image called `hello-world`.
 
-First you need to download the [hello-world](https://hub.docker.com/_/hello-world/) image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it.
-
-Then you should [run](https://docs.docker.com/engine/reference/commandline/run/) this image.
+First you need to download the [hello-world](https://hub.docker.com/_/hello-world/) image from dockerhub by [pulling](https://docs.docker.com/engine/reference/commandline/pull/) it. Then you should [run](https://docs.docker.com/engine/reference/commandline/run/) this image.
 
 You should now se a long message that contains a line with `Hello from Docker!`.
 
