@@ -133,7 +133,7 @@ Talk to the student next to you and discuss what you think this Dockerfile will 
 
 ## 5. Build a image
 
-Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#use-a-dockerignore-file) a new image from your Dockerfile with a `-t` flag, we will call your new image `kalleanka/loop`.
+Then you should [build](https://docs.docker.com/engine/reference/commandline/build/#use-a-dockerignore-file) a new image from your Dockerfile with a `-t` flag, we will tag your new image `kalleanka/loop`.
 
 > **Note** that it is a good practice to name new image to `yourname/scriptname` and when you run the build command don't forget the dot in the end.
 
