@@ -233,11 +233,15 @@ Your final task is to create a shared network between multiply containers. When 
 
     $ docker run -it --rm --name container_a ubuntu
 
+    Inside container_a run:
+
     $ apt-get update && apt-get install iputils-ping
 
     Run Container B:
 
     $ docker run -it --rm --name container_b ubuntu
+
+    Inside container_b run:
 
     $ apt-get update && apt-get install iputils-ping
 
@@ -251,11 +255,13 @@ Your final task is to create a shared network between multiply containers. When 
     $ docker network connect my_network container_b
 
 
-    Ping Containers:
-
-    $ ping container_a
+    Ping container_b inside container_a:
 
     $ ping container_b
+
+    Ping container_a inside container_b:
+
+    $ ping container_a
 
 ## Complete!
 
