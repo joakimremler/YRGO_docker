@@ -187,6 +187,43 @@ To remove container:
 
 If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all your Docker processes the output should now be empty.
 
+## 9. Create a Volume
+
+You should now create a new volume that you should share between two containers. The shared volume should be called `shared_volume`.
+Create a volume:
+
+    $ docker volume create --name shared_volume
+
+List all volumes:
+
+    $ docker volume ls
+
+Delete volume:
+
+    $ docker volume rm shared_volume
+
+Inspect volume:
+
+    $ docker volume inspect shared_volume
+
+Hint: DigitalOcean has really good guides on Docker.
+
+    https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers
+
+## 10. Share Volumes between containers
+
+Run two containers one with [Ubuntu](https://hub.docker.com/_/ubuntu) and one with [Alpine](https://hub.docker.com/_/alpine). Connect Ubuntu and Alpine containers with the shared volume called `shared_volume`. You should now be able to create a file in the Ubuntu container and that file should now also be able in the Alpine container.
+
+    $ docker run -ti --rm -v shared_volume:/public ubuntu
+    $ cd public && echo 'hello' > 'hello.txt'
+
+    $ docker run -ti --rm -v shared_volume:/public alpine
+    $ ls /public
+
+## Create and Share a Network between containers
+
+Your final task is to create a shared network between multiply containers. When you are inside this containers you should be able to [ping](https://vitux.com/linux-ping-command/) the other containers.
+
 ## Complete!
 
 [<img src="https://media.giphy.com/media/4Yn70mra350is/giphy.gif" alt="Complete!" width="50%">](https://gph.is/1Pwt4Xz)
