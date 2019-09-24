@@ -106,13 +106,16 @@ If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all 
 ## 9. Create a Volume
 
 You should now create a new volume that you should share between two containers. The shared volume should be called `shared_volume`.
+
 Hint: DigitalOcean has really good guides on Docker.
 
 ## 10. Share Volumes between containers
 
 Run two containers one with [Ubuntu](https://hub.docker.com/_/ubuntu) and one with [Alpine](https://hub.docker.com/_/alpine). Connect Ubuntu and Alpine containers with the shared volume called `shared_volume`. You should now be able to create a file in the Ubuntu container and that file should now also be able in the Alpine container.
 
-## Create and Share a Network between containers
+## EXTRA
+
+## 11. Create and Share a Network between containers
 
 Your final task is to create a shared network between multiply containers. When you are inside this containers you should be able to [ping](https://vitux.com/linux-ping-command/) the other containers.
 
