@@ -190,6 +190,7 @@ If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all 
 ## 9. Create a Volume
 
 You should now create a new volume that you should share between two containers. The shared volume should be called `shared_volume`.
+
 Create a volume:
 
     $ docker volume create --name shared_volume
@@ -223,6 +224,38 @@ Run two containers one with [Ubuntu](https://hub.docker.com/_/ubuntu) and one wi
 ## Create and Share a Network between containers
 
 Your final task is to create a shared network between multiply containers. When you are inside this containers you should be able to [ping](https://vitux.com/linux-ping-command/) the other containers.
+
+    Create a new network:
+
+    $ docker network create my_network
+
+    Run Container A:
+
+    $ docker run -it --rm --name container_a ubuntu
+
+    $ apt-get update && apt-get install iputils-ping
+
+    Run Container B:
+
+    $ docker run -it --rm --name container_b ubuntu
+
+    $ apt-get update && apt-get install iputils-ping
+
+
+    Connect network to container_a:
+
+    $ docker network connect my_network container_a
+
+    Connect network to container_b:
+
+    $ docker network connect my_network container_b
+
+
+    Ping Containers:
+
+    $ ping container_a
+
+    $ ping container_b
 
 ## Complete!
 
