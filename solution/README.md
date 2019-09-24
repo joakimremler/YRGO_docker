@@ -221,7 +221,9 @@ Run two containers one with [Ubuntu](https://hub.docker.com/_/ubuntu) and one wi
     $ docker run -ti --rm -v shared_volume:/public alpine
     $ ls /public
 
-## Create and Share a Network between containers
+## EXTRA
+
+## 11. Create and Share a Network between containers
 
 Your final task is to create a shared network between multiply containers. When you are inside this containers you should be able to [ping](https://vitux.com/linux-ping-command/) the other containers.
 
