@@ -189,7 +189,7 @@ If you now [list](https://docs.docker.com/engine/reference/commandline/ps/) all 
 
 ## 9. Create a Volume
 
-You should now create a new volume that you should share between two containers. The shared volume should be called `shared_volume`.
+You should now create a new volume that you should shared between two containers. The shared volume should be called `shared_volume`.
 
 Create a volume:
 
